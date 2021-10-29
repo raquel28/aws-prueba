@@ -1,0 +1,309 @@
+@import 'variables';
+@import 'globals';
+@import 'header';
+
+.first{
+  width: 100%;
+
+  &__img{
+    width: 100%;
+
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__texts{
+    flex-direction: column;
+    padding: 3.75em 1.875em;
+
+    h2{
+      font-family: $secundayFont;
+      font-size: 2rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    p{
+      text-align: center;
+      margin: 1.875em 0;
+      font-family: $primaryFont;
+      color: $darkGrayishBlue;
+      z-index: 9999;
+      line-height: 1.875rem;
+    }
+
+    a{
+      font-family: $secundayFont;
+      text-decoration: none;
+      color: inherit;
+      font-size: 1.25rem;
+      position: relative;
+      padding: 0 .5em;
+        
+
+      &::before{
+        content: "";
+        position: absolute;
+        bottom: 1px;
+        right: 0;
+        width: 100%;
+        height: 8px;
+        border-radius: 50px;
+        background-color: hsla(51, 100%, 49%, 0.3);
+        z-index: -1;
+      }
+
+      &:hover::before{
+        background-color: $yellow;
+      }
+    }
+  }
+}
+
+.second{
+  width: 100%;
+
+  &__img{
+    width: 100%;
+
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__texts{
+    flex-direction: column;
+    padding: 3.75em 1.875em;
+
+    h2{
+      font-family: $secundayFont;
+      font-size: 2rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    p{
+      text-align: center;
+      margin: 1.875em 0;
+      font-family: $primaryFont;
+      color: $darkGrayishBlue;
+      z-index: 9999;
+      line-height: 1.875rem;
+    }
+
+    a{
+      font-family: $secundayFont;
+      text-decoration: none;
+      color: inherit;
+      font-size: 1.25rem;
+      position: relative;
+      padding: 0 .5em;
+        
+
+      &::before{
+        content: "";
+        position: absolute;
+        bottom: 1px;
+        right: 0;
+        width: 100%;
+        height: 8px;
+        border-radius: 50px;
+        background-color: hsla(7, 99%, 70%, .3);;
+        z-index: -1;
+      }
+
+      &:hover::before{
+        background-color: $softRed;
+      }
+    }
+  }
+}
+
+.third{
+  width: 100%;
+
+  &__img{
+    width: 100%;
+    position: relative;
+
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__texts{
+    flex-direction: column;
+    padding: 3.75em 1.25em;
+    position: absolute;
+    bottom: 0;
+
+    h2{
+      color: $darkDesaturatedCyan;
+      font-family: $secundayFont;
+      font-size: 2rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    p{
+      text-align: center;
+      margin: 0;
+      margin-top: 1.875em;
+      font-family: $primaryFont;
+      color: $darkDesaturatedCyan;
+      z-index: 9999;
+      line-height: 1.875;
+    }
+  }
+}
+
+.fourth{
+  width: 100%;
+
+  &__img{
+    width: 100%;
+    position: relative;
+
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__texts{
+    flex-direction: column;
+    padding: 3.75em 1.25em;
+    position: absolute;
+    bottom: 0;
+
+    h2{
+      color: $darkBlue;
+      font-family: $secundayFont;
+      font-size: 2rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    p{
+      text-align: center;
+      margin: 0;
+      margin-top: 1.875em;
+      font-family: $primaryFont;
+      color: $veryDarkBlue;
+      z-index: 9999;
+      line-height: 1.875;
+    }
+  }
+}
+
+.clients{
+  h2{
+    margin: 0;
+    margin-bottom: 3.33em;
+    font-family: $secundayFont;
+    color: $grayishBlue;
+    text-align: center;
+    font-size: 1.125rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+  }
+
+  .client{
+  
+    &__img{
+      width: 90px;
+      height: 90px;
+      
+      img{
+        border-radius: 50%; 
+        display: block;
+        width: 100%;
+      }
+    }
+
+    &__texts{
+      p{
+        margin: 1.94em 0;
+        text-align: center;
+        font-family: $primaryFont;
+        color: $darkGrayishBlue;
+        line-height: 1.875em;
+      }
+      
+      h2{
+        color: $veryDarkBlue;
+        letter-spacing: initial;
+        text-transform: initial;
+        margin: 0;
+        margin-bottom: .56em;
+      }
+
+      span{
+        font-family: $primaryFont;
+        color: $grayishBlue;
+        font-size: .9em;
+        margin-bottom: 4.167em;
+      }
+    }
+  }
+}
+
+.gallery{
+  width: 100%;
+  
+  img{
+    width: 100%;
+  }
+}
+
+.footer{
+  padding-bottom: 3.75em;
+  background-color: hsl(167, 44, 70);
+
+  &__logo{
+    width: 175px;
+    margin-bottom: 2.1875em;
+
+    img{
+      display: block;
+      color: $darkBlue;
+      width: 100%;
+    }
+  }
+
+  &__links{
+    width: 100%;
+    margin-bottom: 5em;
+
+    a{
+      color: $darkModeratedBlue;
+      text-decoration: none;
+      font-family: $primaryFont;
+    }
+  }
+
+  &__social{
+    img{
+      margin-right: 1.5625em;
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.attribution{
+  font-family: $primaryFont;
+  background-color: $grayishBlue;
+  color: $white;
+  
+  a{
+    color: $white;
+    text-decoration: none;
+  }
+}
